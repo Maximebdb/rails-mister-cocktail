@@ -2,8 +2,6 @@ class DosesController < ApplicationController
 before_action :set_cocktail, only: [:new,:create]
 
   def new # GET /doses/new
-    @ingredients = Ingredient.all
-    @dose = Dose.new
   end
 
   def create # POST /doses

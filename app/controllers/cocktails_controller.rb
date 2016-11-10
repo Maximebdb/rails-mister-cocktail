@@ -6,6 +6,8 @@ class CocktailsController < ApplicationController
   end
 
   def show # GET /cocktails/:id
+    @dose = Dose.new
+    @ingredients = Ingredient.all
   end
 
   def new # GET /cocktails/new

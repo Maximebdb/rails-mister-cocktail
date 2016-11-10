@@ -1,0 +1,6 @@
+<h1>Cocktails</h1>
+<h2>index</h2>
+<% @cocktails.each_with_index do |cocktail, index| %>
+<h1><%= cocktail.name %></h1>
+<p><%= link_to 'show', "/cocktails/#{cocktail.id}" %></p>
+<%= link_to "add a new cocktail", "/cocktails/new" %>
